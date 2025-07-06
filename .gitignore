@@ -1,0 +1,12 @@
+# Microsoft Windows
+[Dd]esktop.ini
+Thumbs.db
+
+# Apple macOS
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# Log files
+*.log
