@@ -42,22 +42,22 @@ Set-Variable -Name EXECUTION_TIMESTAMP -Value (
 
 Set-Variable -Name LOG_TO_FILE -Value $True -Option Constant
 
-Set-Variable -Name ANDROID_BUILD_TOOLS_VERSION -Value "34.0.0" -Option Constant
+Set-Variable -Name ANDROID_BUILD_TOOLS_VERSION -Value "33.0.1" -Option Constant
 Set-Variable -Name ANDROID_COMMAND_LINE_TOOLS_VERSION -Value ("13114758") -Option Constant
 Set-Variable -Name ANDROID_NDK_VERSION -Value "25.1.8937393" -Option Constant
-Set-Variable -Name ANDROID_PLATFORMS_VERSION -Value "android-34" -Option Constant
-Set-Variable -Name ANDROID_STUDIO_VERSION -Value "2024.1.2.13" -Option Constant
+Set-Variable -Name ANDROID_PLATFORMS_VERSION -Value "android-33" -Option Constant
+Set-Variable -Name ANDROID_STUDIO_VERSION -Value "2022.2.1.20" -Option Constant
 Set-Variable -Name CMAKE_VERSION -Value "3.22.1" -Option Constant
-Set-Variable -Name JDK_VERSION -Value "21.0.7" -Option Constant
+Set-Variable -Name JDK_VERSION -Value "17.0.12" -Option Constant
 
 Set-Variable -Name ANDROID_COMMAND_LINE_TOOLS_CHECKSUM -Value (
     "98b565cb657b012dae6794cefc0f66ae1efb4690c699b78a614b4a6a3505b003"
 ) -Option Constant
 Set-Variable -Name ANDROID_STUDIO_CHECKSUM -Value (
-    "e36b2ba026032f10111d2a6bb895bb31628d8a1bc3ffe6718a67b20d4c211a0f"
+    "cf49d222dbdbf081c9f471a0084bacf15154391cd69985196b2c5f0975f2b29d"
 ) -Option Constant
 Set-Variable -Name JDK_CHECKSUM -Value (
-    "c0ce633915413f91b98add8be040bdf88270e13340d4f63691f029257e4f6433"
+    "af797d9d5003c0daa99380fb8b0a9af36094aabbc5db7a34627e81857571f1e8"
 )    -Option Constant
 
 Set-Variable -Name JDK_MAJOR_VERSION -Value (
