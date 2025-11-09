@@ -48,7 +48,7 @@ Set-Variable -Name ANDROID_NDK_VERSION -Value "27.2.12479018" -Option Constant
 Set-Variable -Name ANDROID_PLATFORMS_VERSION -Value "android-34" -Option Constant
 Set-Variable -Name ANDROID_STUDIO_VERSION -Value "2024.1.2.13" -Option Constant
 Set-Variable -Name CMAKE_VERSION -Value "3.22.1" -Option Constant
-Set-Variable -Name JDK_VERSION -Value "21.0.7" -Option Constant
+Set-Variable -Name JDK_VERSION -Value "21.0.9" -Option Constant
 
 Set-Variable -Name ANDROID_COMMAND_LINE_TOOLS_CHECKSUM -Value (
     "98b565cb657b012dae6794cefc0f66ae1efb4690c699b78a614b4a6a3505b003"
@@ -57,7 +57,7 @@ Set-Variable -Name ANDROID_STUDIO_CHECKSUM -Value (
     "e36b2ba026032f10111d2a6bb895bb31628d8a1bc3ffe6718a67b20d4c211a0f"
 ) -Option Constant
 Set-Variable -Name JDK_CHECKSUM -Value (
-    "c0ce633915413f91b98add8be040bdf88270e13340d4f63691f029257e4f6433"
+    "6d183e2f35fefd3a196d3c7163ca8f1a7ca8f25bdaac15eadd9c9b22e9efdfdd"
 )    -Option Constant
 
 Set-Variable -Name JDK_MAJOR_VERSION -Value (
