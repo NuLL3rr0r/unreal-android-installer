@@ -19,7 +19,8 @@ To use the correct version of the script, switch to the branch that matches your
 
 | Unreal Engine Version | Branch Name |
 |-----------------------|-------------|
-| `5.6`                 | `master`    |
+| `5.6`/`5.7`           | `master`    |
+| `5.7`                 | `5.7`       |
 | `5.6`                 | `5.6`       |
 | `5.5`                 | `5.5`       |
 | `5.4`                 | `5.4`       |
