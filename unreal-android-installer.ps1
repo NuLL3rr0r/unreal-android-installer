@@ -200,9 +200,13 @@ Set-Variable -Name NDKROOT -Value ($NDK_ROOT) -Option Constant
 Set-Variable -Name STUDIO_PATH -Value ($ANDROID_STUDIO_DIR) -Option Constant
 Set-Variable -Name STUDIO_SDK_PATH -Value ($ANDROID_HOME) -Option Constant
 
-Set-Variable -Name OLD_PATH -Value (
+Set-Variable -Name MACHINE_PATH -Value (
+    [System.Environment]::GetEnvironmentVariable('PATH', 'Machine')
+) -Option Constant
+Set-Variable -Name USER_PATH -Value (
     [System.Environment]::GetEnvironmentVariable('PATH', 'User')
 ) -Option Constant
+
 
 Set-Variable -Name PATH -Value (
     (
@@ -212,7 +216,7 @@ Set-Variable -Name PATH -Value (
                 $ANDROID_PLATFORM_TOOLS_DIR,
                 $NDK_ROOT,
                 $JAVA_HOME
-            ) + ($OLD_PATH -split ';')
+            ) + ($USER_PATH -split ';')
         ) |
         Where-Object { $_ -and ($_ -ne '') } |
         Select-Object -Unique
@@ -520,7 +524,7 @@ function M-AcceptAndroidSDKLicenses() {
     M-PrintHeader -Header "Android SDK Licenses Agreement"
 
     $env:JAVA_HOME = $JAVA_HOME
-    $env:PATH = "$JAVA_HOME\bin;$OLD_PATH"
+    $env:PATH = "$JAVA_HOME\bin;$USER_PATH;$MACHINE_PATH"
 
     ("y`n" * 100) | & "$ANDROID_SDK_MANAGER_FROM_TEMP" --sdk_root="$ANDROID_HOME" --licenses
 
@@ -531,7 +535,7 @@ function M-InstallAndroidSDKManager() {
     M-PrintHeader -Header "Latest Android SDK Manager Installation"
 
     $env:JAVA_HOME = $JAVA_HOME
-    $env:PATH = "$JAVA_HOME\bin;$OLD_PATH"
+    $env:PATH = "$JAVA_HOME\bin;$USER_PATH;$MACHINE_PATH"
 
     & "$ANDROID_SDK_MANAGER_FROM_TEMP" --sdk_root="$ANDROID_HOME" "cmdline-tools;latest"
 
