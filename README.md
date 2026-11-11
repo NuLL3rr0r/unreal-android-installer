@@ -17,13 +17,14 @@ It also configures all required environment variables and registry keys to ensur
 
 To use the correct version of the script, switch to the branch that matches your Unreal Engine version before downloading or cloning the repository:
 
-| Unreal Engine Version | Branch Name |
-|-----------------------|-------------|
-| `5.6`/`5.7`/`5.8`     | `master`    |
-| `5.8`                 | `5.8`       |
-| `5.7`                 | `5.7`       |
-| `5.6`                 | `5.6`       |
-| `5.5`                 | `5.5`       |
-| `5.4`                 | `5.4`       |
+| **Unreal Engine Version** | **Branch Name** |
+|:-------------------------:|:---------------:|
+| `5.8`/`5.9`               | `master`        |
+| `5.9`                     | `5.9`           |
+| `5.8`                     | `5.8`           |
+| `5.7`                     | `5.7`           |
+| `5.6`                     | `5.6`           |
+| `5.5`                     | `5.5`           |
+| `5.4`                     | `5.4`           |
 
 > 📌 **Note:** The `master` branch always points to the latest stable version.
