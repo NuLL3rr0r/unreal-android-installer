@@ -42,10 +42,10 @@ Set-Variable -Name EXECUTION_TIMESTAMP -Value (
 
 Set-Variable -Name LOG_TO_FILE -Value $True -Option Constant
 
-Set-Variable -Name ANDROID_BUILD_TOOLS_VERSION -Value "35.0.1" -Option Constant
+Set-Variable -Name ANDROID_BUILD_TOOLS_VERSION -Value "36.1.0" -Option Constant
 Set-Variable -Name ANDROID_COMMAND_LINE_TOOLS_VERSION -Value ("13114758") -Option Constant
 Set-Variable -Name ANDROID_NDK_VERSION -Value "27.2.12479018" -Option Constant
-Set-Variable -Name ANDROID_PLATFORMS_VERSION -Value "android-34" -Option Constant
+Set-Variable -Name ANDROID_PLATFORMS_VERSION -Value "android-36" -Option Constant
 Set-Variable -Name ANDROID_STUDIO_VERSION -Value "2024.1.2.13" -Option Constant
 Set-Variable -Name CMAKE_VERSION -Value "3.22.1" -Option Constant
 Set-Variable -Name JDK_VERSION -Value "21.0.9" -Option Constant
